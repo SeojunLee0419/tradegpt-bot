@@ -5,6 +5,9 @@ description = "A trading bot for stock analysis"
 authors = ["Seojun Lee <seojun.lee0419@gmail.com>"]
 readme = "README.md"
 
+[tool.poetry.virtualenvs]
+in-project = true
+
 packages = [
     { include = "trade_bot" }
 ]
