@@ -1,8 +1,10 @@
 import os
 import yfinance as yf
 from openai import OpenAI
+from dotenv import load_dotenv
 
 # Initialize OpenAI client
+load_dotenv()
 client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
