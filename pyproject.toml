@@ -6,14 +6,15 @@ authors = ["Seojun Lee <seojun.lee0419@gmail.com>"]
 readme = "README.md"
 
 packages = [
-    { include = "trade_bot" }
+    { include = "src" }
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.10"
 yfinance = ">=0.2.52,<0.3.0"
 openai = ">=1.59.8,<2.0.0"
-python-dotenv = "^1.0.1"
+pandas-ta = "^0.3.14b0"
+numpy = "1.21.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
